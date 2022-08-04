@@ -18,7 +18,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg stroke">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <span class="fa fa-laptop"></span> Alexander
+                    <span class="fa fa-laptop"></span> Alexandru
                 </a>
 
                 <!-- if logo is image enable this
@@ -35,7 +35,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item @@about__active">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item @@about__active">
@@ -44,12 +44,7 @@
                         <li class="nav-item @@contact__active">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
                         </li>
-                        <!-- <li class="nav-item @@contact__active">
-                            <a class="nav-link" href="indexRo.html">RO</a>
-                        </li>
-                        <li class="nav-item @@contact__active">
-                            <a class="nav-link" href="index.html">ENG</a>
-                        </li> -->
+                        
                     </ul>
                 </div>
                 <!-- toggle switch for light and dark theme -->
@@ -79,70 +74,68 @@
         </main>
     </div>
 
-     <!-- Footer -->
+    <!-- Footer -->
     <section class="w3l-footer py-sm-5 py-4">
-      <div class="container">
-        <div class="footer-content">
-          <div class="row">
-            <div class="col-lg-8 footer-left">
-              <p class="m-0">
-                Alexandru © Copyright 2022.
-              </p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-lg-8 footer-left">
+                        <p class="m-0">
+                            Alexandru © Copyright 2022.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3">
+                        <ul class="social m-0 p-0 ">
+                            <li>
+                                <a href="https://www.facebook.com/alex.lungu21" target="_blank">
+                                    <span class="fa fa-facebook-official fa-2x"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/lungu-alexandru-constantin-204376170/" target="_blank">
+                                    <span class="fa fa-linkedin-square fa-2x"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#instagram" target="_blank"><span class="fa fa-instagram fa-2x"></span></a>
+                            </li>
+                            @*<li>
+                            <a href="#twitter" target="_blank"><span class="fa fa-twitter"></span></a>
+                            </li>*@
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div
-              class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3"
-            >
-              <ul class="social m-0 p-0 ">
-                <li>
-                  <a href="https://www.facebook.com/alex.lungu21" target="_blank"
-                    ><span class="fa fa-facebook-official fa-2x"></span
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/lungu-alexandru-constantin-204376170/" target="_blank"
-                    ><span class="fa fa-linkedin-square fa-2x"></span
-                  ></a>
-                </li>
-                <li>
-                  <a href="#instagram" target="_blank"><span class="fa fa-instagram fa-2x"></span></a>
-                </li>
-                @*<li>
-                  <a href="#twitter" target="_blank"><span class="fa fa-twitter"></span></a>
-                </li>*@
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <!-- move top -->
-      <button onclick="topFunction()" id="movetop" title="Go to top">
-        <span class="fa fa-angle-up"></span>
-      </button>
-      <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-          scrollFunction();
-        };
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            <span class="fa fa-angle-up"></span>
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction();
+            };
 
-        function scrollFunction() {
-          if (
-            document.body.scrollTop > 20 ||
-            document.documentElement.scrollTop > 20
-          ) {
-            document.getElementById("movetop").style.display = "block";
-          } else {
-            document.getElementById("movetop").style.display = "none";
-          }
-        }
+            function scrollFunction() {
+                if (
+                    document.body.scrollTop > 20 ||
+                    document.documentElement.scrollTop > 20
+                ) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-      </script>
-      <!-- /move top -->
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- /move top -->
     </section>
     <!-- //Footer -->
 
@@ -164,209 +157,201 @@
 
     <script src="~/js/jquery-3.3.1.min.js"></script>
     <!-- default jQuery -->
-
     <!-- /typig-text-->
     <script>
-      const typedTextSpan = document.querySelector(".typed-text");
-      const cursorSpan = document.querySelector(".cursor");
+        const typedTextSpan = document.querySelector(".typed-text");
+        const cursorSpan = document.querySelector(".cursor");
 
-      const textArray = ["Web developer", "Freelancer", "UI/UX Designer"];
-      const typingDelay = 250;
-      const erasingDelay = 10;
-      const newTextDelay = 500; // Delay between current and next text
-      let textArrayIndex = 0;
-      let charIndex = 0;
+        const textArray = ["Web developer", "Freelancer", "UI/UX Designer"];
+        const typingDelay = 250;
+        const erasingDelay = 10;
+        const newTextDelay = 500; // Delay between current and next text
+        let textArrayIndex = 0;
+        let charIndex = 0;
 
-      function type() {
-        if (charIndex < textArray[textArrayIndex].length) {
-          if (!cursorSpan.classList.contains("typing"))
-            cursorSpan.classList.add("typing");
-          typedTextSpan.textContent +=
-            textArray[textArrayIndex].charAt(charIndex);
-          charIndex++;
-          setTimeout(type, typingDelay);
-        } else {
-          cursorSpan.classList.remove("typing");
-          setTimeout(erase, newTextDelay);
+        function type() {
+            if (charIndex < textArray[textArrayIndex].length) {
+                if (!cursorSpan.classList.contains("typing"))
+                    cursorSpan.classList.add("typing");
+                typedTextSpan.textContent +=
+                    textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            } else {
+                cursorSpan.classList.remove("typing");
+                setTimeout(erase, newTextDelay);
+            }
         }
-      }
 
-      function erase() {
-        if (charIndex > 0) {
-          // add class 'typing' if there's none
-          if (!cursorSpan.classList.contains("typing")) {
-            cursorSpan.classList.add("typing");
-          }
-          typedTextSpan.textContent = textArray[textArrayIndex].substring(0, 0);
-          charIndex--;
-          setTimeout(erase, erasingDelay);
-        } else {
-          cursorSpan.classList.remove("typing");
-          textArrayIndex++;
-          if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-          setTimeout(type, typingDelay);
+        function erase() {
+            if (charIndex > 0) {
+                // add class 'typing' if there's none
+                if (!cursorSpan.classList.contains("typing")) {
+                    cursorSpan.classList.add("typing");
+                }
+                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, 0);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            } else {
+                cursorSpan.classList.remove("typing");
+                textArrayIndex++;
+                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+                setTimeout(type, typingDelay);
+            }
         }
-      }
 
-      document.addEventListener("DOMContentLoaded", function () {
-        // On DOM Load initiate the effect
-        if (textArray.length) setTimeout(type, newTextDelay + 50);
-      });
+        document.addEventListener("DOMContentLoaded", function() {
+            // On DOM Load initiate the effect
+            if (textArray.length) setTimeout(type, newTextDelay + 50);
+        });
     </script>
     <!-- //typig-text-->
-
     <!-- services owlcarousel -->
     <script src="~/js/owl.carousel.js"></script>
 
     <!-- script for services -->
     <script>
-      $(document).ready(function () {
-        $(".owl-two").owlCarousel({
-          loop: true,
-          margin: 30,
-          nav: false,
-          responsiveClass: true,
-          autoplay: false,
-          autoplayTimeout: 5000,
-          autoplaySpeed: 1000,
-          autoplayHoverPause: false,
-          responsive: {
-            0: {
-              items: 1,
-              nav: false,
-            },
-            480: {
-              items: 1,
-              nav: false,
-            },
-            700: {
-              items: 1,
-              nav: false,
-            },
-            1090: {
-              items: 3,
-              nav: false,
-            },
-          },
+        $(document).ready(function() {
+            $(".owl-two").owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                responsiveClass: true,
+                autoplay: false,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false,
+                    },
+                    480: {
+                        items: 1,
+                        nav: false,
+                    },
+                    700: {
+                        items: 1,
+                        nav: false,
+                    },
+                    1090: {
+                        items: 3,
+                        nav: false,
+                    },
+                },
+            });
         });
-      });
     </script>
     <!-- //script for services -->
-
     <!-- script for tesimonials carousel slider -->
     <script>
-      $(document).ready(function () {
-        $("#owl-demo1").owlCarousel({
-          loop: true,
-          margin: 20,
-          nav: false,
-          responsiveClass: true,
-          responsive: {
-            0: {
-              items: 1,
-              nav: false,
-            },
-            736: {
-              items: 1,
-              nav: false,
-            },
-            1000: {
-              items: 2,
-              nav: false,
-              loop: false,
-            },
-          },
+        $(document).ready(function() {
+            $("#owl-demo1").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false,
+                    },
+                    736: {
+                        items: 1,
+                        nav: false,
+                    },
+                    1000: {
+                        items: 2,
+                        nav: false,
+                        loop: false,
+                    },
+                },
+            });
         });
-      });
     </script>
     <!-- //script for tesimonials carousel slider -->
-
     <!-- video popup -->
     <script src="~/js/jquery.magnific-popup.min.js"></script>
     <script>
-      $(document).ready(function () {
-        $(".popup-with-zoom-anim").magnificPopup({
-          type: "inline",
+        $(document).ready(function() {
+            $(".popup-with-zoom-anim").magnificPopup({
+                type: "inline",
 
-          fixedContentPos: false,
-          fixedBgPos: true,
+                fixedContentPos: false,
+                fixedBgPos: true,
 
-          overflowY: "auto",
+                overflowY: "auto",
 
-          closeBtnInside: true,
-          preloader: false,
+                closeBtnInside: true,
+                preloader: false,
 
-          midClick: true,
-          removalDelay: 300,
-          mainClass: "my-mfp-zoom-in",
+                midClick: true,
+                removalDelay: 300,
+                mainClass: "my-mfp-zoom-in",
+            });
+
+            $(".popup-with-move-anim").magnificPopup({
+                type: "inline",
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: "auto",
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: "my-mfp-slide-bottom",
+            });
         });
-
-        $(".popup-with-move-anim").magnificPopup({
-          type: "inline",
-
-          fixedContentPos: false,
-          fixedBgPos: true,
-
-          overflowY: "auto",
-
-          closeBtnInside: true,
-          preloader: false,
-
-          midClick: true,
-          removalDelay: 300,
-          mainClass: "my-mfp-slide-bottom",
-        });
-      });
     </script>
     <!-- //video popup -->
-
     <!-- stats number counter-->
     <script src="~/js/jquery.waypoints.min.js"></script>
     <script src="~/js/jquery.countup.js"></script>
     <script>
-      $(".counter").countUp();
+        $(".counter").countUp();
     </script>
     <!-- //stats number counter -->
-
     <!-- disable body scroll which navbar is in active -->
     <script>
-      $(function () {
-        $(".navbar-toggler").click(function () {
-          $("body").toggleClass("noscroll");
+        $(function() {
+            $(".navbar-toggler").click(function() {
+                $("body").toggleClass("noscroll");
+            });
         });
-      });
     </script>
     <!-- disable body scroll which navbar is in active -->
-
     <!--/MENU-JS-->
     <script>
-      $(window).on("scroll", function () {
-        var scroll = $(window).scrollTop();
+        $(window).on("scroll", function() {
+            var scroll = $(window).scrollTop();
 
-        if (scroll >= 80) {
-          $("#site-header").addClass("nav-fixed");
-        } else {
-          $("#site-header").removeClass("nav-fixed");
-        }
-      });
-
-      //Main navigation Active Class Add Remove
-      $(".navbar-toggler").on("click", function () {
-        $("header").toggleClass("active");
-      });
-      $(document).on("ready", function () {
-        if ($(window).width() > 991) {
-          $("header").removeClass("active");
-        }
-        $(window).on("resize", function () {
-          if ($(window).width() > 991) {
-            $("header").removeClass("active");
-          }
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
         });
-      });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function() {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function() {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function() {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
     </script>
     <!--//MENU-JS-->
-
     <!-- bootstrap js -->
     <script src="~/js/bootstrap.min.js"></script>
 

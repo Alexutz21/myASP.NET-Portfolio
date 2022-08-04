@@ -2,9 +2,20 @@
     ViewData["Title"] = "Home Page";
 }
 
+
+
 <!-- banner section -->
 <section id="home" class="w3l-banner py-5">
     <div class="container">
+        <ol>
+            <li class="nav-item @@contact__active">
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">EN</a>
+            </li>
+            <li class="nav-item @@contact__active">
+                <a class="nav-link" asp-area="" asp-controller="HomeRo" asp-action="IndexRo">RO</a>
+            </li>
+
+        </ol>
         <div class="row align-items-center">
             <div class="col-lg-6 col-sm-12 mt-lg-0 mt-4">
                 <span class="title-small">Hello</span>
@@ -414,6 +425,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 </section>
 <!-- //home page video popup section -->
 <!-- freelance hire me -->
