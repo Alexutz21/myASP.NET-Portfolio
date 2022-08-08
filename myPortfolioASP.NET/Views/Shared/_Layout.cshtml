@@ -44,24 +44,34 @@
                         <li class="nav-item @@contact__active">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
                         </li>
+
+                        @*<li class="nav-item @@about__active">
+                            @Html.ActionLink("Home", "Index", "Home",null, new {@class= "nav-item"})   
+                        </li>
+                        <li class="nav-item @@about__active">
+                            @Html.ActionLink("About", "About", "Home",null, new {@class= "nav-item"}) 
+                        </li>
+                        <li class="nav-item @@contact__active">
+                            @Html.ActionLink("Contact", "Contact", "Home",null, new {@class= "nav-item"}) 
+                        </li>*@
                         
                     </ul>
                 </div>
                 <!-- toggle switch for light and dark theme -->
-                <div class="mobile-position">
-                    <nav class="navigation">
-                        <div class="theme-switch-wrapper">
-                            <div class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="mode-container">
-                                    <i class="gg-sun"></i>
-                                    <i class="gg-moon"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-                <!-- //toggle switch for light and dark theme -->
+          <div class="mobile-position">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="mode-container">
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
+          <!-- //toggle switch for light and dark theme -->
             </nav>
         </div>
     </header>
@@ -154,7 +164,7 @@
 
     <script src="~/js/theme-change.js"></script>
     <!-- theme switch js (light and dark)-->
-
+    
     <script src="~/js/jquery-3.3.1.min.js"></script>
     <!-- default jQuery -->
     <!-- /typig-text-->
@@ -351,6 +361,7 @@
             });
         });
     </script>
+
     <!--//MENU-JS-->
     <!-- bootstrap js -->
     <script src="~/js/bootstrap.min.js"></script>

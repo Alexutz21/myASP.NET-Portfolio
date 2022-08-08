@@ -8,18 +8,10 @@
 
     <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
         <div class="container py-2">
-            <ol>
-                <li class="nav-item @@contact__active">
-                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">EN</a>
-                </li>
-                <li class="nav-item @@contact__active">
-                    <a class="nav-link" asp-area="" asp-controller="HomeRo" asp-action="AboutRo">RO</a>
-                </li>
-
-            </ol>
+            
             <h2 class="title">About Me</h2>
             <ul class="breadcrumbs-custom-path mt-2">
-                <li><a href="#url">Home</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                 <li class="active">
                     <span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>
                     About Me
@@ -233,3 +225,100 @@
     </div>
 </section>
 <!-- about page third section -->
+<!-- subscribe block -->
+<div class="abouthy-img-grids">
+    <div class="img-one">
+        <img src="assets/images/g5.jpg" alt=" " class="img-fluid" />
+    </div>
+    <div class="img-one content-mid">
+        <h3 class="title-big">
+            Stay up to date, Subscribe to the free Newsletter!
+        </h3>
+        <form action="#url" method="GET" class="subscribe-form">
+            <input type="email"
+                   name="email"
+                   placeholder="Enter your email"
+                   required />
+            <button type="submit" class="btn">Subscribe</button>
+        </form>
+    </div>
+    <div class="img-one">
+        <img src="assets/images/g3.jpg" alt=" " class="img-fluid" />
+    </div>
+</div>
+<!-- //subscribe block -->
+<!-- achievements block -->
+<section class="w3l-services">
+    <div class="w3l-achievements py-5" id="services">
+        <div class="container py-lg-5">
+            <h5 class="title-small text-center">My achievements</h5>
+            <h3 class="title-big text-center mb-sm-5 mb-4">Personal Awards</h3>
+            <div class="row">
+                <div class="col-lg-6 item">
+                    <div class="card">
+                        <div class="box-wrap">
+                            <div class="icon">
+                                <span class="fa fa-globe"></span>
+                            </div>
+                            <h4><a href="#url">Website of the day</a></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Animi reiciendis labore quisquam suscipit qui veritatis.
+                                voluptas quia officiis fugit soluta sunt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 item">
+                    <div class="card">
+                        <div class="box-wrap">
+                            <div class="icon">
+                                <span class="fa fa-laptop"></span>
+                            </div>
+                            <h4><a href="#url"> Awards Site Of The Day</a></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Animi reiciendis labore quisquam suscipit qui veritatis.
+                                voluptas quia officiis fugit soluta sunt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 item">
+                    <div class="card">
+                        <div class="box-wrap mb-lg-0">
+                            <div class="icon">
+                                <span class="fa fa-trophy"></span>
+                            </div>
+                            <h4><a href="#url">Honorable mention award</a></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Animi reiciendis labore quisquam suscipit qui veritatis.
+                                voluptas quia officiis fugit soluta sunt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 item">
+                    <div class="card">
+                        <div class="box-wrap mb-0">
+                            <div class="icon">
+                                <span class="fa fa-laptop"></span>
+                            </div>
+                            <h4><a href="#url">Designer of the Company</a></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Animi reiciendis labore quisquam suscipit qui veritatis.
+                                voluptas quia officiis fugit soluta sunt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //achievements block -->
