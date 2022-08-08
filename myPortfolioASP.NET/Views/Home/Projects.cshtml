@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!-- projects breadcrumb -->
+<section class="w3l-about-breadcrumb text-center">
+
+    <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+        <div class="container py-2">
+            
+            <h2 class="title">Projects</h2>
+            <ul class="breadcrumbs-custom-path mt-2">
+                <li>@Html.ActionLink("Home", "Index", "Home",null, new {@class= "nav-item"})</li>
+                <li class="active">
+                    <span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>
+                    My Projects
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- //projects breadcrumb -->

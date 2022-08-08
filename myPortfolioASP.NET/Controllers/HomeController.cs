@@ -21,6 +21,10 @@ namespace myPortfolioASP.NET.Controllers
         {
             return View();
         }
+        public IActionResult Projects()
+        {
+            return View();
+        }
         public IActionResult Contact()
         {
             return View();
