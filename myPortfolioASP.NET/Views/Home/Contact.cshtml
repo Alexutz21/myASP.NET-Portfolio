@@ -9,7 +9,7 @@
         <div class="container py-2">
             <h2 class="title">Contact Me</h2>
             <ul class="breadcrumbs-custom-path mt-2">
-                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li>@Html.ActionLink("Home", "Index", "Home",null, new {@class= "nav-item"})</li>
                 <li class="active">
                     <span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>
                     Contact

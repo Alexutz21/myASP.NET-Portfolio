@@ -11,7 +11,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-sm-12 mt-lg-0 mt-4">
                 <span class="title-small">Hello</span>
-                <h1 class="mb-2 title"><span>I'm</span> Alexander</h1>
+                <h1 class="mb-2 title"><span>I'm</span> Alexandru</h1>
                 <h1 class="mb-4 title">
                     a <span class="typed-text"></span><span class="cursor">&nbsp</span>
                 </h1>
@@ -33,7 +33,7 @@
             </div>
             <div class="col-lg-6 col-md-8 col-sm-10 mt-lg-0 mt-4">
                 <div class="img-effect text-lg-center">
-                    <img src="assets/images/photo.png"
+                    <img src="~/Img/photo.png"
                          alt="myphoto"
                          class="img-fluid" />
                 </div>
@@ -49,7 +49,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="position-relative">
-                        <img src="assets/images/myphoto.jpg"
+                        <img src="~/Img/myphoto.jpg"
                              alt=""
                              class="radius-image img-fluid" />
                     </div>
@@ -192,10 +192,10 @@
             </div>
             <div class="mt-5 text-more">
                 <p class="mt-4 pt-3 sample text-center">
-                    <a asp-area="" asp-controller="Home" asp-action="About">
-                        View All Services
+                    @Html.ActionLink("View All Services", "About", "Home",null, new { id = "services", @class = "services"})
+                    @Html.ActionLink("Link Text", "About", "Home", new { controller = "HomeController", id = 1 }, new { @class = "serv" })    
                         <span class="pl-2 fa fa-long-arrow-right"></span>
-                    </a>
+                    
                 </p>
             </div>
         </div>
@@ -229,7 +229,7 @@
                                 </blockquote>
                                 <div class="testi-des">
                                     <div class="test-img">
-                                        <img src="assets/images/team1.jpg"
+                                        <img src="~/Img/team1.jpg"
                                              class="img-fluid"
                                              alt="client-img" />
                                     </div>
@@ -254,7 +254,7 @@
                                 </blockquote>
                                 <div class="testi-des">
                                     <div class="test-img">
-                                        <img src="assets/images/team2.jpg"
+                                        <img src="~/Img/team2.jpg"
                                              class="img-fluid"
                                              alt="client-img" />
                                     </div>
@@ -279,7 +279,7 @@
                                 </blockquote>
                                 <div class="testi-des">
                                     <div class="test-img">
-                                        <img src="assets/images/team3.jpg"
+                                        <img src="~/Img/team3.jpg"
                                              class="img-fluid"
                                              alt="client-img" />
                                     </div>
@@ -304,7 +304,7 @@
                                 </blockquote>
                                 <div class="testi-des">
                                     <div class="test-img">
-                                        <img src="assets/images/team4.jpg"
+                                        <img src="~/Img/team4.jpg"
                                              class="img-fluid"
                                              alt="client-img" />
                                     </div>
@@ -329,7 +329,7 @@
                                 </blockquote>
                                 <div class="testi-des">
                                     <div class="test-img">
-                                        <img src="assets/images/team2.jpg"
+                                        <img src="~/Img/team2.jpg"
                                              class="img-fluid"
                                              alt="client-img" />
                                     </div>
@@ -354,7 +354,7 @@
                                 </blockquote>
                                 <div class="testi-des">
                                     <div class="test-img">
-                                        <img src="assets/images/team3.jpg"
+                                        <img src="~/Img/team3.jpg"
                                              class="img-fluid"
                                              alt="client-img" />
                                     </div>
@@ -394,7 +394,7 @@
                 </div>
                 <div class="history-info mt-5">
                     <div class="position-relative">
-                        <img src="assets/images/bg.jpg"
+                        <img src="~/Img/bg.jpg"
                              class="img-fluid radius-image video-popup-image"
                              alt="video-popup" />
 
