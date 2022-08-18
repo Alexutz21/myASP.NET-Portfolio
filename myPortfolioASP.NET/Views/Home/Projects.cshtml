@@ -8,7 +8,7 @@
 
     <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
         <div class="container py-2">
-            
+
             <h2 class="title">Projects</h2>
             <ul class="breadcrumbs-custom-path mt-2">
                 <li>@Html.ActionLink("Home", "Index", "Home",null, new {@class= "nav-item"})</li>
@@ -21,3 +21,86 @@
     </div>
 </section>
 <!-- //projects breadcrumb -->
+<!-- achievements block -->
+<section class="w3l-services">
+    <div class="w3l-achievements py-5 serv" id="serv">
+        <div class="container py-lg-5">
+            <h5 class="title-small text-center">My Projects</h5>
+            <h3 class="title-big text-center mb-sm-5 mb-4">Projects</h3>
+            <div class="row">
+                <div class="col-lg-6 item">
+                    <div class="card">
+                        <div class="box-wrap">
+                            <div class="icon">
+                                <span class="fa fa-globe"></span>
+                            </div>
+                            <h4><a href="https://www.getdigitalsoft.com" target="_blank">GetDigitalSoft</a></h4>
+                            <p>
+                                Companie de tehnologie care dezvolta solutii web, mobile si desktop complexe si sigure, cu accent pe imbunatatirea proceselor de afaceri care stau în spatele software-ului
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 item">
+                    <div class="card">
+                        <div class="box-wrap">
+                            <div class="icon">
+                                <span class="fa fa-globe"></span>
+                            </div>
+                            <h4><a href="https://alexutz21.github.io/VladimirFitness2/">Vladimir Fitness</a></h4>
+                            <p>
+                                Persona page for fitness individuals(under development)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 item">
+                    <div class="card">
+                        <div class="box-wrap mb-lg-0">
+                            <div class="icon">
+                                <span class="fa fa-trophy"></span>
+                            </div>
+                            <h4><a href="#url">Honorable mention award</a></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Animi reiciendis labore quisquam suscipit qui veritatis.
+                                voluptas quia officiis fugit soluta sunt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 item">
+                    <div class="card">
+                        <div class="box-wrap mb-0">
+                            <div class="icon">
+                                <span class="fa fa-laptop"></span>
+                            </div>
+                            <h4><a href="#url">Designer of the Company</a></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Animi reiciendis labore quisquam suscipit qui veritatis.
+                                voluptas quia officiis fugit soluta sunt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //achievements block -->
+<!-- freelance hire me -->
+<section class="w3l-grid-quote text-center py-5">
+    <div class="container p-5 py-3">
+        <h6 class="title-small">Get in touch</h6>
+        <h3 class="title-big mb-md-5 mb-4">Let's start a Project!</h3>
+        <a onclick="location.href='@Url.Action("Contact", "Home")'" class="btn btn-style btn-primary mr-2">
+            Contact
+        </a>
+        <a onclick="location.href='@Url.Action("About", "Home")'" class="btn btn-style btn-outline-primary">About Me</a>
+    </div>
+</section>
+<!-- //freelance hire me -->
