@@ -1,0 +1,118 @@
+<!-- about page second section -->
+<div class="py-5 w3l-resume">
+    <div class="container py-lg-5 py-3">
+        <h5 class="title-small mb-2">Hello</h5>
+        <h3 class="title-big mb-4">
+            I Can give your business a new Creative start right away!
+        </h3>
+        <p>
+            I believe that everyone should be able to make games and that having diverse people brings a multitude of benefits not only to the team but also to the project.
+        </p>
+        @*1st Row Start*@
+        <div class="row features-w3pvt-main mt-5 pt-md-3" id="features">
+            <div class="col-lg-4 col-md-6 feature-gird">
+                <div class="row features-hny-inner-gd">
+                    <div class="col-md-2 col-2 featured_grid_left">
+                        <div class="icon_left_grid">
+                            <span class="fa fa-laptop" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-10 featured_grid_right_info">
+                        <h4><a class="link-hny" href="#url">Responsive Design </a></h4>
+                        <p>
+                            Modern web design approach that allows websites and pages to render (or display) on all devices and screen sizes by automatically adapting to the screen, whether it’s a desktop, laptop, tablet, smartphone, or even a smart TV!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 feature-gird mt-md-0 mt-4">
+                <div class="row features-hny-inner-gd">
+                    <div class="col-md-2 col-2 featured_grid_left">
+                        <div class="icon_left_grid">
+                            <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-10 featured_grid_right_info">
+                        <h4><a class="link-hny" href="#url">Powerful Editor </a></h4>
+                        <p>
+                            I use Visual Studio Code integrated development environment (IDE). I use them  It is used to develop computer programs for Microsoft Windows, as well as web sites, web applications and web services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 feature-gird mt-lg-0 mt-md-5 mt-4">
+                <div class="row features-hny-inner-gd">
+                    <div class="col-md-2 col-2 featured_grid_left">
+                        <div class="icon_left_grid">
+                            <span class="fa fa-desktop" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-10 featured_grid_right_info">
+                        <h4><a class="link-hny" href="#url">Creative Design </a></h4>
+                        <p>
+                            Creative design is a process that uses digital and physical image-making tools to create renders and representations used for marketing purposes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*1st Row Stop*@
+        @*2nd Row Start*@
+        <div class="row features-w3pvt-main mt-5 pt-md-3" id="features">
+            <div class="col-lg-4 col-md-6 feature-gird">
+                <div class="row features-hny-inner-gd">
+                    <div class="col-md-2 col-2 featured_grid_left">
+                        <div class="icon_left_grid">
+                            <span class="fa fa-laptop" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-10 featured_grid_right_info">
+                        <h4><a class="link-hny" href="#url">Great performance</a></h4>
+                        <p>
+                            I work with the most modern technology that can handle
+                            a large flow of customers and maintain a high level of quality
+                            of work.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 feature-gird mt-md-0 mt-4">
+                <div class="row features-hny-inner-gd">
+                    <div class="col-md-2 col-2 featured_grid_left">
+                        <div class="icon_left_grid">
+                            <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-10 featured_grid_right_info">
+                        <h4><a class="link-hny" href="#url">Long-term solution</a></h4>
+                        <p>
+                            My digital products are created to a high-quality level,
+                            so I have a support period after product release
+                            because I am confident in what I do.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 feature-gird mt-lg-0 mt-md-5 mt-4">
+                <div class="row features-hny-inner-gd">
+                    <div class="col-md-2 col-2 featured_grid_left">
+                        <div class="icon_left_grid">
+                            <span class="fa fa-desktop" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-10 featured_grid_right_info">
+                        <h4><a class="link-hny" href="#url">Quality product</a></h4>
+                        <p>
+                            Before releasing a product, I as a software developer test
+                            it constantly in operation for imperfections and check it
+                            during user interaction, guaranteeing that my product is of
+                            high quality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*2nd Row Stop*@
+    </div>
+</div>
+<!-- //about page about section -->
