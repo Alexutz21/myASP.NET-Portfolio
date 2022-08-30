@@ -3,23 +3,45 @@
 *@
 @{
 }
-<!-- about breadcrumb -->
-<section class="w3l-about-breadcrumb text-center">
 
-    <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
-        <div class="container py-2">
 
-            <h2 class="title">About Me</h2>
-            <ul class="breadcrumbs-custom-path mt-2">
-                <li>@Html.ActionLink("Home", "Index", "Home",null, new {@class= "nav-item"})</li>
-                <li class="active">
-                    <span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>
-                    About Me
-                </li>
-            </ul>
+<!-- about me --><div class="p-5"></div>
+<div class="w3l-about py-5 pt-9">
+    <div class="container py-lg-3">
+        <div class="row about-content mb-lg-5">
+
+            <div class="col-lg-6 info pl-lg-5 mt-lg-0 mt-5 pt-lg-0 pt-3 align-center">
+                <h3 class="title-big">I’m Alexander Lungu</h3>
+                <p class="mt-md-4 mt-3 mb-0">
+                    I grew up playing video games but I didn't think that developing them would become a passion for me and that's why I started learning the Unity engine with C#
+                    @*A Game programmer and designer from Romania, <br />
+                    I love working in teams and keeping busy. <br />*@
+                    
+                </p>
+                <img src="~/Img/signature.png"
+                     class="img-fluid signature"
+                     width="300px"
+                     alt="my photo" />
+                <p class="m-0 mb-2">Alexander Lungu</p>
+                <p>21/06/1984.</p>
+            </div>
+            <div class="col-lg-1">
+
+            </div>
+            <div class="col-lg-5 pr-md-5">
+                <div class="image-block">
+                    <img src="~/Img/me.jpg"
+                         class="img-fluid myphoto"
+                         alt="my photo" />
+                    <img src="~/Img/cross.png"
+                         class="img-fluid pos"
+                         alt="dots" />
+                </div>
+            </div>
         </div>
     </div>
-</section>
+</div>
+<!-- //about me -->
 <!-- //about breadcrumb -->
 <!-- about page about section -->
 <section class="w3l-aboutblock1" id="about">
@@ -35,14 +57,12 @@
                 </div>
                 <div class="col-lg-8 mt-lg-0 mt-5">
                     <h5 class="title-small mb-2">Hello, I am UI/UX Designer</h5>
-                    <h3 class="title-big">Having O2 Years of Experience</h3>
+                    <h3 class="title-big">Team work</h3>
                     <p class="mt-4">
-                        Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-                        ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
-                        amet consectetur adipisicing elit. Non quae, fugiat consequatur
-                        voluptatem nihil ad. Lorem ipsum dolor sit amet.
+                        The biggest thing I've learned about is communication, actually, I mean you can be the best programmer or the best artist or the best designer, at the end of the day you have to work in a team because it's very important to work together with people.
+                        
                     </p>
-                    <div class="my-info mt-4">
+                    @*<div class="my-info mt-4">
                         <div class="single-info">
                             <span>Name:</span>
                             <p>Alexandru Lungu</p>
@@ -61,7 +81,7 @@
                                 <a href="mailto:alexander@mail.com">alex.lungu21@yahoo.com</a>
                             </p>
                         </div>
-                    </div>
+                    </div>*@
                     <div class="my-social mt-lg-5 mt-4">
                         <a href="https://drive.google.com/file/d/1LXZTyVKweYW7T2HDAFlz12weh-u52OSk/view?usp=sharing" target="_blank" class="btn btn-style btn-primary">Download CV</a>
                         <ul class="social m-0 p-0 ">
@@ -98,11 +118,7 @@
             I Can give your business a new Creative start right away!
         </h3>
         <p>
-            I am a freelancer based in Romania and i have been building
-            noteworthy UX/UI designs and websites, which comply with the
-            latest design trends. I help convert a vision and an idea into
-            meaningful and useful products. Having a sharp eye for product
-            evolution helps me prioritize tasks, iterate fast and deliver faster
+            I believe that everyone should be able to make games and that having diverse people brings a multitude of benefits not only to the team but also to the project.
         </p>
         @*1st Row Start*@
         <div class="row features-w3pvt-main mt-5 pt-md-3" id="features">
@@ -199,9 +215,9 @@
                     <div class="col-md-10 col-10 featured_grid_right_info">
                         <h4><a class="link-hny" href="#url">Quality product</a></h4>
                         <p>
-                            Before releasing a product, I as a software developer test 
-                            it constantly in operation for imperfections and check it 
-                            during user interaction, guaranteeing that my product is of 
+                            Before releasing a product, I as a software developer test
+                            it constantly in operation for imperfections and check it
+                            during user interaction, guaranteeing that my product is of
                             high quality.
                         </p>
                     </div>
@@ -382,7 +398,10 @@
 <section class="w3l-grid-quote text-center py-5">
     <div class="container p-5 py-3">
         <h6 class="title-small">Get in touch</h6>
-        <h3 class="title-big mb-md-5 mb-4">Let's start a Project!</h3>
+        <p>
+            Sometimes I also make websites, like this one.<br /> If you have any questions please feel free to contact me :)
+
+        </p><br />
         <a onclick="location.href='@Url.Action("Contact", "Home")'" class="btn btn-style btn-primary mr-2">
             Contact
         </a>

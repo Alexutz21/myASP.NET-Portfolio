@@ -4,7 +4,7 @@
 @{
 }
 <!-- contact breadcrumb -->
-<section class="w3l-about-breadcrumb text-center">
+@*<section class="w3l-about-breadcrumb text-center">
     <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
         <div class="container py-2">
             <h2 class="title">Contact Me</h2>
@@ -17,13 +17,11 @@
             </ul>
         </div>
     </div>
-</section>
-<!-- contact breadcrumb -->
-<!-- contact block -->
-<!-- contact1 -->
-<section class="w3l-contact-1 py-5">
-    <div class="contacts-9 py-lg-5 py-md-4">
-        <div class="container">
+</section>*@
+
+<section class="w3l-contact-1 py-5 p-5">
+    @* <div class="contacts-9 py-lg-5 py-md-4">
+       <div class="container p-5">
             <div class="d-grid contact-view">
                 <div class="cont-details">
                     <div class="cont-top">
@@ -93,10 +91,56 @@
                         </div>
                     </form>
                 </div>
-                
+
             </div>
         </div>
-    </div>
+        </div>*@
+
+    <!-- contact form -->
+    <section class="w3l-contacts-12 py-5 pt-9">
+        <div class="container py-md-3">
+            <div class="contacts12-main">
+                <div class="title-section">
+                    <h3 class="main-title-w3 mb-md-5 mb-4">
+                        Want to get in touch? <br />Find me on
+                        <a href="tel:+40 752 817 792" class="text-primary">phone</a>,
+                        <a href="mailto:alex.lungu21@yahoo.com" class="text-primary">email</a>, 
+                        <a href="https://www.linkedin.com/in/lungu-alexandru-constantin-204376170/" target="_blank" class="text-primary">linkedin</a> 
+                        or <a href="https://twitter.com/Alexutz21L" target="_blank" class="text-primary">twitter</a>
+                    </h3>
+                </div>
+                <form action="https://sendmail.w3layouts.com/submitForm"
+                      method="post"
+                      class="">
+                    <div class="main-input">
+                        <input type="text"
+                               name="w3lName"
+                               placeholder="Enter your name"
+                               class="contact-input"
+                               required="" />
+                        <input type="email"
+                               name="w3lSender"
+                               placeholder="Enter your mail"
+                               class="contact-input"
+                               required="" />
+                        <input type="number"
+                               name="w3lPhone"
+                               placeholder="Your phone number"
+                               class="contact-input"
+                               required="" />
+                        <textarea class="contact-textarea contact-input"
+                                  name="w3lMessage"
+                                  placeholder="Enter your message"
+                                  required=""></textarea>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn-primary btn primary-btn-style">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- //contact form -->
 </section>
 <!-- /contact1 -->
 <!-- <div class="map-iframe">
