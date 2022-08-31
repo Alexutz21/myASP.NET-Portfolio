@@ -1,0 +1,101 @@
+<!-- achievements block -->
+<section class="w3l-services p-5">
+    <div class="w3l-achievements py-5 serv" id="serv">
+        <div class="container py-lg-5">
+            <div class="row">
+                <div class="col-lg-3">
+
+                </div>
+                <div class="col-lg-6">
+                    <h5 class="title-small text-center">My Projects</h5>
+                    <p>
+                        Here you can see some of the projects I've had the opportunity
+                        of contributing to, and some of the personal-fun-things I've been
+                        working on.
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                </div>
+            </div><br>
+
+            <div class="row">
+                <div class="col-lg-12 item">
+                    <div class="card">
+                        <div class="box-wrap">
+                            <div class="icon">
+                                <span class="fa fa-globe"></span>
+                            </div>
+                            <h4><a href="https://www.getdigitalsoft.com" target="_blank">GetDigitalSoft</a></h4>
+                            <p>
+                                Companie de tehnologie care dezvolta solutii web, mobile si desktop complexe si sigure, cu accent pe imbunatatirea proceselor de afaceri care stau în spatele software-ului
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 item">
+                    <div class="card">
+                        <div class="box-wrap">
+
+                            <iframe width="460" height="275" src="https://www.youtube.com/embed/8PE7kne2Leo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 item">
+                    <div class="card">
+                        <div class="box-wrap">
+
+                            <h4>Snowboard Game</h4>
+                            <ul>
+                                <li>
+                                    Developed in Unity
+                                </li>
+                                <li>
+                                    Coded with C#
+                                </li>
+                                <li>
+                                    Coded with love
+                                </li>
+                                <li>
+                                    Game for windows
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 item">
+                    <div class="card">
+                        <div class="box-wrap">
+                            <div class="icon">
+                                <span class="fa fa-globe"></span>
+                            </div>
+                            <h4><a href="https://www.getdigitalsoft.com" target="_blank">GetDigitalSoft</a></h4>
+                            <p>
+                                .............
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 item">
+                    <div class="card">
+                        <div class="box-wrap">
+                            <div class="icon">
+                                <span class="fa fa-globe"></span>
+                            </div>
+                            <h4><a href="https://alexutz21.github.io/VladimirFitness2/" target="_blank">Vladimir Fitness</a></h4>
+                            <p>
+                                Persona page for fitness individuals(under development)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //achievements block -->
