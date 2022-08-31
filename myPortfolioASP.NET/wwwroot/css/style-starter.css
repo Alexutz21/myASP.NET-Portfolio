@@ -10227,10 +10227,16 @@ nav ul li a:hover {
   background-color: var(--bg-light);
 }
 
-.w3l-banner h1.title {
-  font-size: 48px;
-  line-height: 1.2;
-  font-weight: 600; }
+/*header and footer color*/
+.w3l-hf {
+    background-color: var(--bg-light);
+}
+
+    .w3l-banner h1.title {
+        font-size: 48px;
+        line-height: 1.2;
+        font-weight: 600;
+    }
 
 .w3l-banner h1.title span {
   font-weight: 300; }
