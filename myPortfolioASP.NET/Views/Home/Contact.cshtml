@@ -2,6 +2,7 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "Alexandru";
 }
 <!-- contact breadcrumb -->
 @*<section class="w3l-about-breadcrumb text-center">
@@ -20,82 +21,6 @@
 </section>*@
 
 <section class="w3l-contact-1 py-5 p-5">
-    @* <div class="contacts-9 py-lg-5 py-md-4">
-       <div class="container p-5">
-            <div class="d-grid contact-view">
-                <div class="cont-details">
-                    <div class="cont-top">
-                        <div class="cont-left text-center">
-                            <span class="fa fa-phone text-primary  fa-2x"></span>
-                        </div>
-                        <div class="cont-right">
-                            <h6>Call Me</h6>
-                            <p><a href="tel:+40 752 817 792">+40 752 817 792</a></p>
-                        </div>
-                    </div>
-                    <div class="cont-top margin-up">
-                        <div class="cont-left text-center">
-                            <span class="fas fa-at text-primary fa-2x"></span>
-                        </div>
-                        <div class="cont-right">
-                            <h6>Email Me</h6>
-                            <p>
-                                <a href="mailto:alex.lungu21@yahoo.com" class="mail">alex.lungu21@yahoo.com</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cont-top margin-up">
-                        <div class="cont-left text-center">
-                            <span class="fa fa-map-marker text-primary  fa-2x"></span>
-                        </div>
-                        <div class="cont-right">
-                            <h6>Location</h6>
-                            <p>Address Castor street, Arad, Romania</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="map-content-9">
-                    <form action="https://sendmail.w3layouts.com/submitForm"
-                          method="post">
-                        <div class="twice-two">
-                            <input type="text"
-                                   class="form-control"
-                                   name="w3lName"
-                                   id="w3lName"
-                                   placeholder="Name"
-                                   required="" />
-                            <input type="email"
-                                   class="form-control"
-                                   name="w3lSender"
-                                   id="w3lSender"
-                                   placeholder="Email"
-                                   required="" />
-                        </div>
-                        <div class="twice">
-                            <input type="text"
-                                   class="form-control"
-                                   name="w3lSubject"
-                                   id="w3lSubject"
-                                   placeholder="Subject"
-                                   required="" />
-                        </div>
-                        <textarea name="w3lMessage"
-                                  class="form-control"
-                                  id="w3lMessage"
-                                  placeholder="Message"
-                                  required=""></textarea>
-                        <div class="text-right">
-                            <button type="submit" class="btn btn-primary btn-style mt-4">
-                                Send Message
-                            </button>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-        </div>*@
-
     <!-- contact form -->
     <section class="w3l-contacts-12 py-5 pt-9">
         <div class="container py-md-3">
@@ -111,30 +36,31 @@
                 </div>
                 <form action="https://sendmail.w3layouts.com/submitForm"
                       method="post"
-                      class="">
+                      class=""
+                id="form">
                     <div class="main-input">
                         <input type="text"
-                               name="w3lName"
+                               name="Name"
                                placeholder="Enter your name"
                                class="contact-input"
                                required="" />
                         <input type="email"
-                               name="w3lSender"
+                               name="Email"
                                placeholder="Enter your mail"
                                class="contact-input"
                                required="" />
                         <input type="number"
-                               name="w3lPhone"
+                               name="Phone"
                                placeholder="Your phone number"
                                class="contact-input"
                                required="" />
                         <textarea class="contact-textarea contact-input"
-                                  name="w3lMessage"
+                                  name="Message"
                                   placeholder="Enter your message"
                                   required=""></textarea>
                     </div>
                     <div class="text-right">
-                        <button class="btn-primary btn primary-btn-style">Send</button>
+                        <button type="submit" class="btn-primary btn primary-btn-style">Send</button>
                     </div>
                 </form>
             </div>
@@ -143,9 +69,45 @@
     <!-- //contact form -->
 </section>
 <!-- /contact1 -->
-<!-- <div class="map-iframe">
+ @*<div class="map-iframe">
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1sen!2spl"
         width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe>
-</div> -->
+</div> *@
 <!-- //contact block -->
+<!-- Send Email JS -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    var form = document.getElementById("form");
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var name = document.getElementById("Name").value,
+            email = document.getElementById("Email").value,
+            phone = document.getElementById("Phone").value,
+            message = document.getElementById("Message").value,
+            body =
+                "Name: " +
+                name +
+                "<br/> E-mail: " +
+                email +
+                "<br/> Phone: " +
+                phone +
+                "<br/> Message: " +
+                message;
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "getdigitalsoft@gmail.com",
+            Password: "nkxrrlblpljqigua",
+            // SecurityToken: "a6c01205-750e-4f4f-b85e-0dd61ed212aa",
+            To: "getdigitalsoft@gmail.com",
+            From: email,
+            Subject: "New Contact Enquiry",
+            Body: body,
+        }).then((message) => alert("Your message was sent. Thank you!")),
+            document.getElementById("form").reset();
+        // .reset(); //it should reset but nothing
+        // function resetform() {
+        //   document.getElementById("form").reset();
+        // }
+    });
+</script>
