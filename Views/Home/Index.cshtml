@@ -1,0 +1,180 @@
+﻿@{
+    ViewData["Title"] = "Alexandru";
+}
+
+
+
+<!-- banner section -->
+<section id="home" class="w3l-banner py-5">
+    <div class="container p-5">
+
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-sm-12 mt-lg-0 mt-4">
+                <span class="title-small">Hello</span>
+                <h1 class="mb-2 title"><span>I'm</span> Alexandru</h1>
+                <h1 class="mb-4 title">
+                    a <span class="typed-text"></span><span class="cursor">&nbsp</span>
+                </h1>
+
+                <p>
+                    @* I'm Alexandru, *@
+                    I'm a hardworking, team-oriented programmer who strives to write
+                    clean, cache friendly code. I’m always eager to learn and leverage my skills
+                    to facilitate unforgettable gameplay and narrative driven experiences.
+
+
+                </p>
+                <div class="mt-sm-5 mt-4">
+                    <a onclick="location.href='@Url.Action("about", "Home")'" class="btn btn-primary btn-style mr-2">
+                        Find More
+                    </a>
+                    @*<a onclick="location.href='@Url.Action("Projects", "Home")'" class="btn btn-outline-primary btn-style mr-2">
+                    Portfolio
+                    </a>*@
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-10 mt-lg-0 mt-4">
+                <div class="img-effect text-lg-center">
+                    <img src="~/Img/photo.png"
+                         alt="myphoto"
+                         class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //banner section -->
+<!-- home page about section -->
+<section class="w3l-index3" id="about">
+    <div class="midd-w3 py-5  p-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="~/Img/Gamer/18354571-removebg.png"
+                             alt=""
+                             class="radius-image img-fluid" />
+                    </div>
+                </div>
+                @*<div class="col-lg-1"></div>*@
+                <div class="col-lg-6 mt-lg-0 mt-5">
+                    <h5 class="title-small mb-2">Who am I?</h5>
+                    <h3 class="title-big">
+                        Someone great according to my son!
+                    </h3>
+                    @* <h3 class="title-big">
+                    I'm Alexandru Lungu, a Game Developer and visual UI/UX Designer
+                    </h3>*@
+                    <p class="mt-4">
+                        I value family very much and believe that things done
+                        with passion lead to infinity and beyond.
+                        I focus on one task at a time to give each project the complete attention.
+                        Strong time management skills allows me to do more in less time.
+                        I gather, analyze information and problem-solve to reach a meaningful 
+                        conclusion into every project I develop.
+
+                    </p>
+                    <a href="https://drive.google.com/file/d/1LXZTyVKweYW7T2HDAFlz12weh-u52OSk/view?usp=sharing" target="_blank" class="btn btn-style btn-primary mt-lg-5 mt-4">Download CV</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //home page about section -->
+<!-- my featured projects -->
+<section class="w3l-block w3l-banner py-5">
+    <div class="container py-lg-3">
+        <h3 class="title1 mb-md-5 mb-4 p-5">Featured projects</h3>
+        <div class="row">
+            @*1st Project*@
+            <div class="col-lg-4 col-md-4 col-sm-6 content"
+                 data-id="id-1"
+                 data-type="cat-item-1">
+                <a onclick="location.href='@Url.Action("Projects", "Home")'" class="image-zoom mr-2">
+                <span class="image-block">
+                    <div class="content-overlay"></div>
+
+                        <img src="~/Img/Gamer/4000_4_07.jpg"
+                             class="img-fluid w3layouts agileits"
+                             alt="portfolio-img" />
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">This is a title</h3>
+                            <p class="content-text">This is a short description</p>
+                        </div>
+
+                    </span>
+            </a>
+                </div>
+            
+            @*2nd Project*@                    
+            <div class="col-lg-4 col-md-4 col-sm-6 content mt-sm-0 mt-4"
+                 data-id="id-2"
+                 data-type="cat-item-2">
+                <a onclick="location.href='@Url.Action("Projects", "Home")'" class="image-zoom mr-2">
+
+                <span class="image-block">
+                    <div class="content-overlay"></div>
+                        <img src="~/Img/Gamer/4000_4_08.jpg"
+                             class="img-fluid w3layouts agileits"
+                             alt="portfolio-img" />
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">This is a title</h3>
+                            <p class="content-text">This is a short description</p>
+                        </div>
+
+                    </span>
+                </a>
+                </div>
+           
+            @*3rd Project*@
+            
+            <div class="col-lg-4 col-md-4 col-sm-6 content mt-md-0 mt-4"
+                 data-id="id-2"
+                 data-type="cat-item-2">
+                <a onclick="location.href='@Url.Action("Projects", "Home")'" class="image-zoom mr-2">
+                <span class="image-block">
+                    <div class="content-overlay"></div>
+                    
+                        <img src="~/Img/Gamer/4000_4_10.jpg"
+                             class="img-fluid w3layouts agileits"
+                             alt="portfolio-img" />
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">This is a title</h3>
+                            <p class="content-text">This is a short description</p>
+                        </div>
+
+                    </span>
+                </a>
+                </div>
+            
+            <div class="mt-sm-5 mt-4 text-center">
+                <a onclick="location.href='@Url.Action("projects", "Home")'" class="btn btn-primary btn-style mr-2">
+                    View More
+                </a>
+                @*<a onclick="location.href='@Url.Action("Projects", "Home")'" class="btn btn-outline-primary btn-style mr-2">
+                Portfolio
+                </a>*@
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //my featured projects -->
+<!-- freelance hire me -->
+<section class="w3l-grid-quote text-center py-5">
+    <div class="container p-5 py-3">
+        <h4 class="title-small">Get in touch</h4>
+        <p>
+            I’d love to chat about job opportunities, <br />
+            projects I’ve worked on,
+            diversity in tech,<br />
+            cat memes, or whatever is on your mind.
+        </p>
+        <br />
+        <a onclick="location.href='@Url.Action("Contact", "Home")'" class="btn btn-style btn-primary mr-2">
+            Contact
+        </a>
+        <a onclick="location.href='@Url.Action("About", "Home")'" class="btn btn-style btn-outline-primary">About Me</a>
+    </div>
+</section>
+<!-- //freelance hire me -->
