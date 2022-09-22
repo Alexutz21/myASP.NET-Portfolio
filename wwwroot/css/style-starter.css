@@ -431,9 +431,10 @@ mark,
     align-self: center;
     transition: transform .5s; /* Animation */
 }
-    .img-game:hover {
-        transform: scale(1.2);
-    }
+.img-game:hover {
+    transform: scale(1.2);
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
