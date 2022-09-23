@@ -18,7 +18,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg stroke">
                 <a class="navbar-brand" href="@Url.Action("Index","Home")">
-                    <span class="fas fa-gamepad" ></span> Alexandru
+                    <span class="fas fa-gamepad"></span> Alexandru
                 </a>
 
                 <!-- if logo is image enable this
@@ -42,7 +42,7 @@
                             <a class="nav-link" asp-controller="Home" asp-action="About">About</a>
                         </li>
                         @*<li class="nav-item @@about__active">
-                            <a class="nav-link" asp-controller="Home" asp-action="Services">Services</a>
+                        <a class="nav-link" asp-controller="Home" asp-action="Services">Services</a>
                         </li>*@
                         <li class="nav-item @@contact__active">
                             <a class="nav-link" asp-controller="Home" asp-action="Projects">Projects</a>
@@ -99,7 +99,11 @@
                 <div class="row">
                     <div class="col-lg-8 footer-left">
                         <p class="m-0">
-                            Alexandru © Copyright 2022.
+                            Alexandru © 2022. 
+                       
+                            <a href="https://www.getdigitalsoft.com" target="_blank">
+                                <img src="~/Img/LogoGetDigitalSoft/getDigital-logo (3).png" />
+                            </a>
                         </p>
                     </div>
                     <div class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3">
@@ -120,9 +124,9 @@
                                 <a href="https://www.youtube.com/channel/UCHq-AcQ2qI6rW82A3edvn9g/videos" target="_blank"><span class="fa fa-youtube fa-2x"></span></a>
                             </li>
                             @*<li>
-                                <a href="https://www.facebook.com/alex.lungu21" target="_blank">
-                                    <span class="fa fa-facebook-official fa-2x"></span>
-                                </a>
+                            <a href="https://www.facebook.com/alex.lungu21" target="_blank">
+                            <span class="fa fa-facebook-official fa-2x"></span>
+                            </a>
                             </li>*@
                         </ul>
                     </div>
@@ -136,7 +140,7 @@
         </button>
         <script>
             // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {
+            window.onscroll = function () {
                 scrollFunction();
             };
 
@@ -222,7 +226,7 @@
             }
         }
 
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             // On DOM Load initiate the effect
             if (textArray.length) setTimeout(type, newTextDelay + 50);
         });
@@ -233,7 +237,7 @@
 
     <!-- script for services -->
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".owl-two").owlCarousel({
                 loop: true,
                 margin: 30,
@@ -267,7 +271,7 @@
     <!-- //script for services -->
     <!-- script for tesimonials carousel slider -->
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $("#owl-demo1").owlCarousel({
                 loop: true,
                 margin: 20,
@@ -295,7 +299,7 @@
     <!-- video popup -->
     <script src="~/js/jquery.magnific-popup.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".popup-with-zoom-anim").magnificPopup({
                 type: "inline",
 
@@ -339,8 +343,8 @@
     <!-- //stats number counter -->
     <!-- disable body scroll which navbar is in active -->
     <script>
-        $(function() {
-            $(".navbar-toggler").click(function() {
+        $(function () {
+            $(".navbar-toggler").click(function () {
                 $("body").toggleClass("noscroll");
             });
         });
@@ -348,7 +352,7 @@
     <!-- disable body scroll which navbar is in active -->
     <!--/MENU-JS-->
     <script>
-        $(window).on("scroll", function() {
+        $(window).on("scroll", function () {
             var scroll = $(window).scrollTop();
 
             if (scroll >= 80) {
@@ -359,14 +363,14 @@
         });
 
         //Main navigation Active Class Add Remove
-        $(".navbar-toggler").on("click", function() {
+        $(".navbar-toggler").on("click", function () {
             $("header").toggleClass("active");
         });
-        $(document).on("ready", function() {
+        $(document).on("ready", function () {
             if ($(window).width() > 991) {
                 $("header").removeClass("active");
             }
-            $(window).on("resize", function() {
+            $(window).on("resize", function () {
                 if ($(window).width() > 991) {
                     $("header").removeClass("active");
                 }
