@@ -2,7 +2,7 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-    ViewData["Title"] = "Alexandru";
+    ViewData["Title"] = "Alexander";
 }
 <!-- contact breadcrumb -->
 @*<section class="w3l-about-breadcrumb text-center">
@@ -73,9 +73,18 @@
     <!-- //contact form -->
 </section>
 <!-- /contact1 -->
-<div class="map-iframe">
+@*<div class="map-iframe">
     <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d22096.22499757861!2d21.336167!3d46.189999!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sro!4v1664009714285!5m2!1sen!2sro" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+</div>*@
 <!-- //contact block -->
+<!--SendEmailScript-->
+<script src="~/js/scriptEmail.js"></script>
+<script src="https://cdn.jsdelivr.net/npm@emailjs/browser@Int32/dist/email.min.js"></script>
+
+<script>
+    (funtion(){
+        emailjs.init("NJsOag0WQeJW-nRGH");
+    }) ();
+</script>
 
 
