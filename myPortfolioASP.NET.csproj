@@ -10,8 +10,4 @@
     <None Include="wwwroot\js\site.js" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="MailKit" Version="3.4.1" />
-  </ItemGroup>
-
 </Project>
